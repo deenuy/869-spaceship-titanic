@@ -1,5 +1,5 @@
 # 869-spaceship-titanic
-Predict whether passengers aboard the Spaceship Titanic were transported to an alternate dimension using structured data and advanced machine learning techniques.
+Predict whether passengers aboard the Spaceship Titanic were transported to an alternate dimension using structured data and advanced machine learning techniques. The competition is hosted on Kaggle and mimics an interstellar disaster scenario where nearly 13,000 passengers' fate must be determined by data.
 
 ## 🚀 Features
 - 🔍 Exploratory Data Analysis (EDA) and imbalanced data handling
