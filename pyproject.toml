@@ -1,0 +1,41 @@
+[project]
+name = "869-spaceship-titanic"
+version = "0.1.0"
+description = "ML competition for predicting alternate-dimension passengers on Spaceship Titanic"
+authors = [
+    { name="Deenu Gengiti", email="deenuy@gmail.com" }
+]
+requires-python = ">=3.10"
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "xgboost",
+    "lightgbm",
+    "catboost",
+    "optuna",
+    "shap",
+    "matplotlib",
+    "seaborn",
+    "wandb",
+    "pyyaml",
+
+    # Utilities & Developer Experience
+    "loguru==0.7.3",
+    "rich==13.9.4",
+    "ipywidgets",
+
+    # Frontend (Gradio)
+    "gradio==5.12.0",
+]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
