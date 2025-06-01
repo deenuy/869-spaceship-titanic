@@ -65,6 +65,21 @@ source .venv/bin/activate
 uv pip install -e .
 ```
 
+### ✅ Optional: Lock Dependencies for Reproducibility
+Machine learning experiments can break when package versions change unexpectedly. Locking dependencies ensures the exact same environment is used — down to the patch level — preserving reproducibility for future reruns, submissions, or sharing results with others.
+
+To capture a simple snapshot:
+```bash
+uv pip freeze > requirements.txt
+```
+
+For full reproducibility (best for CI builds):
+```bash
+uv pip install uv-pip-tools
+uv pip-compile pyproject.toml
+```
+
+> This creates a lockfile with fully pinned versions based on your `pyproject.toml`, ensuring consistent, conflict-free builds on any machine.
 ---
 
 ## 🧪 Running Experiments
