@@ -27,7 +27,6 @@ share/python-wheels/
 MANIFEST
 
 # Local development environment | deenu
-models/
 *.pkl
 *.csv
 wandb/
