@@ -20,21 +20,28 @@ Maximize leaderboard accuracy on the Kaggle competition by systematically explor
 ## 📁 Project Structure
 
 ```bash
-    869-spaceship-titanic/
-    ├── data/               # Raw and processed datasets
-    ├── notebooks/          # EDA, baseline models, tuning, and final reports
-    ├── models/             # Saved model artifacts (e.g., joblib, ONNX, etc.)
-    ├── src/                # Python package for modular pipeline code
-    │   ├── __init__.py
-    │   ├── data_prep.py
-    │   ├── features.py
-    │   ├── models.py
-    │   ├── tuning.py
-    │   └── explain.py
-    ├── pyproject.toml      # Project metadata and dependencies
-    ├── requirements.txt    # Locked dependencies (optional)
-    ├── README.md           # You're here
-    └── .gitignore
+  869-spaceship-titanic/
+  ├── data/                                                 # Raw, processed, and submission datasets
+  │   ├── raw/                                              # Unmodified input datasets from Kaggle
+  │   ├── processed/                                        # Cleaned, engineered, train/test split
+  │   └── submission/                                       # Final CSV submissions for leaderboard
+  ├── notebooks/                                            # Chronological modeling pipeline notebooks
+  │   ├── 01-eda-initial-analysis.ipynb                     # Visual and statistical EDA to uncover survival patterns
+  │   ├── 02-feature-engineering-v3.ipynb                   # Full-scale feature engineering with preprocessing
+  │   ├── 03-baseline-model-v2.ipynb                        # Baseline models (LogReg, Trees) without tuning
+  │   ├── 04-feature-imp-analysis-and-selection.ipynb       # Feature importance + selection using RF, MI, Corr
+  │   ├── 05-baseline-model-best-feats.ipynb                # Baseline model using selected top features
+  │   ├── 05-hyperparameter-opt-random-search-v1.ipynb      # RandomizedSearchCV tuning (wide exploration)
+  │   ├── 06-hyperparameter-opt-grid-search-v1.ipynb        # GridSearchCV tuning (focused search space)
+  │   ├── 06-hyperparameter-opt-TPE-optune-v1.ipynb         # Bayesian tuning with Optuna TPE + early pruning
+  │   └── 07-final-evaluation-submission.ipynb              # Final model evaluation and Kaggle submission output
+  ├── models/                                               # Serialized models and tuning artifacts
+  ├── src/                                                  # Modularized source code for reusability
+  ├── pyproject.toml                                        # Optional: Structured project metadata + build config
+  ├── requirements.txt                                      # Fixed list of packages and versions for reproducibility
+  ├── README.md                                             # Project overview, instructions, and team details
+  └── .gitignore                                            # Prevents committing data, checkpoints, and cache
+
 ```
 
 

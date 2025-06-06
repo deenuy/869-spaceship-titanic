@@ -29,6 +29,7 @@ MANIFEST
 # Local development environment | deenu
 *.pkl
 *.csv
+submissions
 wandb/
 .ipynb_checkpoints/
 .idea
