@@ -2,14 +2,14 @@
 Predict whether passengers aboard the Spaceship Titanic were transported to an alternate dimension using structured data and advanced machine learning techniques. The competition is hosted on Kaggle and mimics an interstellar disaster scenario where nearly 13,000 passengers' fate must be determined by data.
 
 ## 🚀 Features
-- 🔍 Exploratory Data Analysis (EDA) and imbalanced data handling
-- 🧱 Feature engineering including derived features, group aggregations, and embeddings
-- 🔄 Model experimentation pipeline using Optuna, GridSearchCV, and ensemble methods
-- 🪄 Non-tree models explored: SVM, Logistic Regression, KNN, Neural Networks
-- 📊 Cross-validation vs Leaderboard tracking with Weights & Biases (W&B)
-- 💻 GPU-accelerated training via Google Colab Pro+
-- 🔁 Versioned experimentation with GitHub integration
-- 🧪 Error analysis and explainability using SHAP, confusion matrices, and misclassified examples
+🔍 Comprehensive EDA with passenger demographics and transport pattern analysis
+🧱 Advanced feature engineering with interaction terms and domain transformations
+🎯 Feature importance analysis and selection using recursive elimination techniques
+📊 Baseline model evaluation with optimized feature sets for performance comparison
+🔄 Three-stage hyperparameter optimization: Random Search → Grid Search → TPE (Optuna)
+🏆 Multi-algorithm benchmarking: XGBoost, CatBoost, Gradient Boosting with CV validation
+🚀 TPE-optimized CatBoost achieving 0.8033 CV accuracy (+17bp over baseline)
+📈 Final model evaluation with prediction confidence analysis and Kaggle submission preparation
 
 ## 🎯 Goal
 Maximize leaderboard accuracy on the Kaggle competition by systematically exploring:
