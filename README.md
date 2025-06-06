@@ -13,7 +13,9 @@ Predict whether passengers aboard the Spaceship Titanic were transported to an a
 
 ## 🎯 Goal
 Maximize leaderboard accuracy on the Kaggle competition by systematically exploring:
-- Multiple ML algorithms (XGBoost, LGBM, CatBoost, etc.)
+- Multiple ML algorithms 
+  - Tree-based models: CatBoost, XGBoost, Gradient Boosting, Random Forest, AdaBoost
+  - Non-tree models: Logistic Regression and SVM
 - Robust hyperparameter tuning
 - Data-centric AI practices
 
